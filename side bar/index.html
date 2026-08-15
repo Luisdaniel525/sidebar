@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8jhXD3DgXII7v1OWMJzSQN34+n6kAQAln1E+" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <aside class="sidebar">
+            <div class="logo">Mi Logo</div>
+            <ul class="nav">
+                <li data-section="inicio"><img src="icons/home.png" alt="Inicio"> Inicio</li>
+                <li data-section="perfil"><img src="icons/user.png" alt="Perfil"> Perfil</li>
+                <li data-section="mensajes"><img src="icons/messages.png" alt="Mensajes"> Mensajes</li>
+                <li data-section="camara"><img src="icons/camera.png" alt="Cámara"> Cámara</li>
+                <li data-section="configuracion"><img src="icons/settings.png" alt="Configuración"> Configuración</li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div id="inicio" class="section active">Contenido Inicio</div>
+            <div id="perfil" class="section">Contenido Perfil</div>
+            <div id="mensajes" class="section">Contenido Mensajes</div>
+            <div id="camara" class="section">Contenido Cámara</div>
+            <div id="configuracion" class="section">Contenido Configuración</div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
